@@ -1,10 +1,10 @@
 const images = {
-    "<sakura>":"image/sakura.png",
-    "<fish>":"image/fish.png",
-    "<star>":"image/star.png",
-    "<arrow>":"image/arrow.png",
-    "<triangle>":"image/triangle.png",
-    "<rocket>":"image/rocket.png"
+    "<sakura>":"src/image/sakura.png",
+    "<fish>":"src/image/fish.png",
+    "<star>":"src/image/star.png",
+    "<arrow>":"src/image/arrow.png",
+    "<triangle>":"src/image/triangle.png",
+    "<rocket>":"src/image/rocket.png"
 };
 const motype = {
     IMAGE: 1,
@@ -90,7 +90,7 @@ class MImage extends MObject {
     constructor(value) {
         super(value);
         this.img = new Image();
-        this.img.src = "image/" + value + ".png";
+        this.img.src = "src/image/" + value + ".png";
         this.visible = true;
         this.type = motype.IMAGE;
 
